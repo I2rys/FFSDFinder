@@ -30,13 +30,13 @@ function walk(dir, done) { //Not mine :)
   };
 
 //Main
-if(Self_Args.length == 0){
+if(!Self_Args.length){
     console.log(`node index.js <directory>
 Example: node index.js ./test_directory`)
     process.exit()
 }
 
-if(Self_Args[0] == ""){
+if(!Self_Args[0]){
     console.log("Invalid directory.")
     process.exit()
 }
